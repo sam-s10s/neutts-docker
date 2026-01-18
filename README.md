@@ -18,6 +18,7 @@ A FastAPI-based HTTP proxy server for the Neuphonic TTS model, optimized for Ras
 1. Install dependencies:
 
 ```bash
+cd neutts
 uv sync
 ```
 
@@ -32,6 +33,7 @@ LOG_LEVEL=INFO
 3. Run the server:
 
 ```bash
+cd neutts
 uv run proxy.py
 ```
 
@@ -147,7 +149,8 @@ Test the server locally:
 
 ```bash
 # Start server
-python proxy.py
+cd neutts
+uv run proxy.py
 
 # Test streaming mode
 curl -X POST http://localhost:8080/generate \
