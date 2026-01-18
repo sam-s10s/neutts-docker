@@ -112,9 +112,6 @@ uv run docker_models.py
 
 # Specify custom model
 uv run docker_models.py --model neuphonic/neutts-nano-q4-gguf
-
-# Skip voice validation (if voices mounted at runtime)
-uv run docker_models.py --no-validate-voice
 ```
 
 ## Environment Variables
@@ -163,9 +160,6 @@ curl -X POST http://localhost:8080/generate \
   -H "Content-Type: application/json" \
   -d '{"text": "Testing WAV", "stream": false}' \
   --output test.wav
-
-# Play the WAV file (macOS)
-afplay test.wav
 ```
 
 ## License
