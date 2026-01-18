@@ -1,4 +1,4 @@
-# NeuTTS Proxy Server
+# NeuTTS Proxy Server in Docker
 
 A FastAPI-based HTTP proxy server for the Neuphonic TTS model, optimized for Raspberry Pi and low-powered ARM devices.
 
