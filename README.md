@@ -46,7 +46,7 @@ The Docker build includes model pre-loading to embed models in the image:
 docker build -t neutts:latest .
 
 # Run the container
-docker run -p 8080:8080 neutts:latest
+docker run --rm --name neutts -p 8080:8080 neutts:latest
 ```
 
 The `preload_models.py` script runs during Docker build to:
